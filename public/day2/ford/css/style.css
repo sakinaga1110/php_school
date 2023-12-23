@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+body {
+    /* background-color: #fee; */
+    background-image: url(image/pink-flowers.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wrapper {
+
+    width: 60vw;
+    /* width: 500px;
+    height: 300px; */
+    margin: 0 auto;
+    background-color: #fffeee;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #0bd;
+    background-color: #faa;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    /* text-align: center; */
+}
+.section-box{
+    border: 2px solid pink;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.flex {
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid pink;
+    border-radius: 10px;
+    padding: 10px; */
+}
+
+h2 {
+    color: navy;
+    /* width:fit-content; */
+    /* border: 3px solid pink; */
+    /* border-radius: 30px; */
+    margin: 0;
+
+}
+img{border-radius: 50%;}
+
+p {
+    /*border:1px solid red; */
+    font-size: 20px;
+    line-height: 1.7;
+    text-align: justify;
+    color: rgba(10, 130, 165, .5);
+
+
+}
+
+table {
+    margin: auto;
+    text-align: left;
+}
+
+td,
+th {
+    padding: 10px;
+    border-bottom: 1px dashed pink;
+}
+
+form {
+    background-color: #fff;
+    padding: 0 0 10px 0;
+}
+
+h3 {
+    /* border: 1px solid black; */
+    /* width:fit-content; */
+    padding: 3px;
+
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+}
+
+.button {
+    text-align: center;
+}
+
+/* ここからフッター */
+footer {
+    /* border: 1px solid red; */
+    text-align: center;
+
+}
+
+/* nav {
+    margin: auto;
+} */
+
+ul {
+    /* border:1px solid blue; */
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+
+/* .link-box {
+    margin: 0 auto;
+} */
+
+/* sectionを作って　おすすめの本の紹介の上、お問い合わせ欄の上にスペースを空けたい */

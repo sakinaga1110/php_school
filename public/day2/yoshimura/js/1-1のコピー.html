@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+ <head>
+    <meta charset="utf-8">
+    <title>jsでスタイルを切り替えてみよう</title>
+ 　　<style>
+        #box {
+            width: 140px;
+            height: 140px;
+            cursor: pointer;
+            background-color: #3CB371;
+        }
+    
+    
+    </style>
+ </head>
+
+ <body>
+      <button onclick="changeColor('orange')">オレンジボタン</button>
+      <button onclick="changeColor('pink')">ピンクボタン</button>
+
+     <div id="box"></div>
+
+  　　<script>
+    　　　var button = document.getElementById("box");
+
+     　　function changeColor(color) {
+         box.style.backgroundColor=color
+     }
+  </script>
+</body>
+
+</html>

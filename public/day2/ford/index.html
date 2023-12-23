@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+   <meta charset="utf-8">
+   <title>フォード　裕子</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+   <div class="wrapper">
+      <header>
+         <h1 id="title">Hello everyone!!</h1>
+      </header>
+      <main>
+         <div class="section-box">
+            <h2>自己紹介</h2>
+            <div class="flex">
+               <p>皆さん初めまして。フォード裕子と申します。<br>沖縄県生まれ、長野県育ちです。<br>今年の１月に佐世保市に転居してきました。</p>
+
+               <figure><a href="https://arukuma.jp/about"><img src="image/arukuma.jpg" alt="あるくまの画像">
+                  <figcaption>あるくま</figcaption></a>
+               </figure>
+
+            </div>
+         </div>
+         <article class="section-box">
+            <h2>おすすめの書籍を紹介します</h2>
+            <table>
+               <tr>
+                  <th>書籍名</th>
+                  <th>感想</th>
+                  <th>リンク</th>
+               </tr>
+               <tr>
+                  <td>西の魔女が死んだ</td>
+                  <td>おばあちゃんと孫の絆に感動します。</td>
+                  <td>
+                     <a
+                        href="https://www.amazon.co.jp/%E8%A5%BF%E3%81%AE%E9%AD%94%E5%A5%B3%E3%81%8C%E6%AD%BB%E3%82%93%E3%81%A0-%E6%96%B0%E6%BD%AE%E6%96%87%E5%BA%AB-%E6%A2%A8%E6%9C%A8-%E9%A6%99%E6%AD%A9/dp/4101253323">サイトで確認</a>
+                  </td>
+               </tr>
+               <tr>
+                  <td>納棺夫日記</td>
+                  <td>「おくりびと」として映画化されました。</td>
+                  <td>
+                     <a
+                        href="https://www.amazon.co.jp/%E7%B4%8D%E6%A3%BA%E5%A4%AB%E6%97%A5%E8%A8%98-%E6%96%87%E6%98%A5%E6%96%87%E5%BA%AB-%E9%9D%92%E6%9C%A8-%E6%96%B0%E9%96%80/dp/4167323028">サイトで確認</a>
+                  </td>
+               </tr>
+            </table>
+         </article>
+         <!-- 入力フォームここから -->
+         <div class="section-box">
+            <h3>お問い合わせはこちら</h3>
+            <form action="example.php" method="post" name="contact-form">
+               <table>
+                  <tr>
+                     <th>
+                        <label for="name">名前：</label>
+                     </th>
+                     <td><input type="text" name=name id="name" placeholder="名字　名前"></td>
+                  </tr>
+                  <tr>
+                     <th>
+                        <label>性別：</label>
+                     </th>
+                     <td>
+                        <input type="radio" name="gender" value="男" id="male"><label for="male">男</label>
+                        <input type="radio" name="gender" value="女" id="female"><label for="female">女</label>
+                        <input type="radio" name="gender" value="その他" id="other"><label for="other">その他</label>
+                     </td>
+                  </tr>
+                  <tr>
+                     <th>
+                        <label>居住地</label>
+                     </th>
+                     <td>
+                        <select>
+                           <option value="佐世保市">佐世保市</option>
+                           <option value="佐世保市外">佐世保市外</option>
+                        </select>
+                     </td>
+                  </tr>
+                  <tr>
+                     <th>
+                        <label>好きな本のカテゴリー：</label>
+                     </th>
+                     <td><input type="checkbox" name="category" value="文学評論" id="文学評論"><label for="文学評論">文学、評論</label>
+                        <input type="checkbox" name="category" value="ノンフィクション" id="ノンフィクション"><label
+                           for="ノンフィクション">ノンフィクション</label>
+                        <input type="checkbox" name="category" value="ビジネス経済" id="ビジネス経済"><label
+                           for="ビジネス経済">ビジネス、経済</label>
+                        <input type="checkbox" name="category" value="地理歴史" id="地理歴史"><label for="地理歴史">地理、歴史</label>
+                     </td>
+                  </tr>
+
+                  <!-- 入力フォーム -->
+                  <tr>
+                     <th>問い合わせ内容</th>
+                     <td>
+                        <textarea name="message" placeholder="メッセージを入力"></textarea>
+                     </td>
+                  </tr>
+               </table>
+               <div class="button">
+
+                  <button type="submit" onclick="clickEvent()">送信する</button>
+                  <!-- <input type="submit" value="送信する" > -->
+               </div>
+            </form>
+         </div>
+      </main>
+      <footer>
+         <nav>
+            <ul>
+               <li><a href="#title">タイトルへジャンプ</a></li>
+               <li><a href="#">Facebook</a></li>
+               <li><a href="#">X(旧Twitter)</a></li>
+
+            </ul>
+         </nav>
+         <small>Copyright 2023 Yuko Ford&copy;</small>
+      </footer>
+
+   </div>
+   <!-- ｊｓ -->
+   <script>
+      function clickEvent() {
+        alert('ありがとうございました！');
+      }
+   </script>
+
+</body>
+
+</html>

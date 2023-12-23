@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <title>吉崎公一の自己紹介ページ</title>
+  <script src="js/script.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-css-reset@1.4.0/dist/reset.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <h1><span class="txt_deco">自己紹介</span></h1>
+      <div class="flex-container top-box">
+        <figure class="flex-item1">
+          <img src="images/profile_image.jpeg" alt="エストレアの画像" width="2016" height="1512">
+        </figure>
+        <p class="flex-item2">はじめまして、<span class="font">ハムイチ</span>といいます。<br />長崎県佐世保市在住です。<br><em class="font">PHP入門講座</em>に通い始めました！</p>
+        <figure class="flex-item3">
+          <img src="images/pose_ganbarou_man.png" alt="がんばろう！" class="fight" width="773" height="773">
+        </figure>
+      </div>
+    </header>
+    <main>
+      <section>
+        <h2><span class="txt_deco">書籍紹介のコーナー</span></h2>
+        <p>おすすめの書籍をお知らせします。</p>
+        <div class="amazon-link">
+          <a href="https://www.amazon.co.jp/%E5%A4%A2%E3%82%92%E3%81%8B%E3%81%AA%E3%81%88%E3%82%8B%E3%82%BE%E3%82%A61-%E6%B0%B4%E9%87%8E-%E6%95%AC%E4%B9%9F/dp/4866512415"
+            target="_blank">私のおすすめの書籍購入はコチラから[amazon]</a>
+        </div>
+        <table>
+          <tr>
+            <th>書籍名</th>
+            <th>感想</th>
+            <th>出版社へのリンク</th>
+          </tr>
+          <tr>
+            <td>夢をかなえるゾウ</td>
+            <td>
+              ゾウの姿をした神の化身ガネーシャ（なぜか関西弁）と、しがないサラリーマンのやり取りがユニークな自己啓発本。笑いのエッセンスを交えた内容で飽きずに読み切れる！
+            </td>
+            <td>
+              <a href="https://bunkyosha.com/contents/yumezou-series" target="_blank">文響社</a>
+            </td>
+          </tr>
+        </table>
+      </section>
+      <section>
+        <h2><span class="txt_deco">あなたのおすすめの書籍はナニ？</span></h2>
+        <form action="sample.php" method="post">
+          <dl>
+            <div class="flex-container form">
+              <dt>書籍名：</dt>
+              <dd><input type="text" placeholder="例）吾輩は猫である"></dd>
+            </div>
+            <div class="flex-container form">
+              <dt>感想：</dt>
+              <dd>
+                <textarea name="impression" cols="50" rows="8" placeholder="400字程度で記入してください。"></textarea>
+              </dd>
+            </div>
+          </dl>
+          <input type="button" id="button" value="送信する" onclick="clickEvent()">
+        </form>
+      </section>
+    </main>
+    <footer>
+      <small>Copyright &copy; KOICHI YOSHIZAKI All Rights Reserved.</small>
+    </footer>
+  </div>
+</body>
+
+</html>

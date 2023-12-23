@@ -1,0 +1,49 @@
+@charset "UTF-8";
+body {
+    background-color: #edeef5;
+    background-image:
+    background-size:cover;
+}
+header {
+    text-align: center;
+}
+h1 {
+    color: rgb(6, 58, 127);font-size: 27px;text-align: center;font-family: serif;text-align: center;
+    background-color: rgba(19, 34, 238, 0.31);
+}
+h2 {
+    font-family: serif;text-align: center;
+}
+h3 {
+    font-family: serif;text-align: center;
+}
+p {
+    font-size:20px;text-align: center;
+}
+div input {
+    width: 350px;
+    height: 20px;
+}
+img {
+    width: 350px;
+    height: 350px;
+}
+textarea {
+    width: 500px;
+    height: 100px;
+}
+table {
+    margin: auto;
+    text-align: left;
+}
+th {
+    text-align: center;
+}
+form {
+    text-align: center;
+}
+/* アルバム/ミュージシャンとコメント欄の位置全体をセンターにして左端を揃えたい*/
+footer {
+    /* border: 1px solid red; */
+    text-align: center;
+}

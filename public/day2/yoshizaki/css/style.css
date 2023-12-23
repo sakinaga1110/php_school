@@ -1,0 +1,155 @@
+@charset "utf-8";
+
+/* ======================= google fonts CDN*/
+@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Kaisei+Decol&family=Yusei+Magic&display=swap');
+
+/* ======================= font-family
+font-family: 'Hachi Maru Pop', cursive;
+font-family: 'Kaisei Decol', serif;
+font-family: 'Yusei Magic', sans-serif;
+*/
+
+body {
+  background: url(../images/background3.jpg) no-repeat top left /cover;
+  background-attachment: fixed;
+  text-align: center;
+}
+
+.wrapper {
+  background: rgba(255, 255, 255, .5);
+  width: 80vw;
+  padding: 1em 2em;
+  margin: 0 auto;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.top-box {
+  width: 90%;
+  margin: auto;
+}
+
+.flex-item1,
+.flex-item3 {
+  flex: 1;
+}
+
+.flex-item2 {
+  flex: 2;
+}
+
+.flex-item1 img,
+.flex-item3 img {
+  width: 100%;
+}
+
+.flex-item1 img {
+  box-shadow: 0 0 10px #666;
+}
+
+header img {
+  width: 70%;
+  height: auto;
+}
+
+header,
+main {
+  border: 1px groove #ccc;
+  padding: 1em;
+}
+
+header,
+main,
+main>*,
+footer {
+  width: fit-content;
+  margin: 0 auto;
+  margin-bottom: 2em;
+}
+
+header p {
+  margin-bottom: 1em;
+}
+
+header .font {
+  font-family: 'Yusei Magic', sans-serif;
+  font-size: 1.5em;
+}
+
+em.font {
+  font-family: 'Hachi Maru Pop', cursive;
+  font-style: normal;
+  letter-spacing: .2em;
+}
+
+h1 {
+  border-left: 30px solid #fc0;
+  border-right: 30px solid #fc0;
+  border-radius: 30px;
+  width: fit-content;
+  padding: 0 .5em;
+  margin: 0 auto;
+}
+
+h2 {
+  font-family: 'Yusei Magic', sans-serif;
+  margin-bottom: .5em;
+  text-decoration: underline;
+  text-decoration-thickness: .5em;
+  text-decoration-color: rgba(255, 255, 0, 0.7);
+  text-decoration-skip-ink: none;
+  text-underline-offset: -.2em;
+}
+
+main a {
+  text-decoration: none;
+}
+
+.amazon-link {
+  margin-bottom: 1em;
+}
+
+table {
+  border-collapse: collapse;
+  width: 80%;
+  margin: 0 auto;
+}
+
+tr:first-child {
+  background: #aef;
+}
+
+th,
+td {
+  border: 1px solid #999;
+}
+
+th:nth-child(odd) {
+  width: 20%;
+}
+
+td:nth-child(2) {
+  text-align: left;
+}
+
+.form {
+  margin-bottom: 1em;
+}
+
+dt {
+  width: 5em;
+  text-align: right;
+  font-family: 'Kaisei Decol', serif;
+}
+
+input[type="button"] {
+  text-align: left;
+  outline: 3px dashed #f66;
+  outline-offset: 5px;
+}
+
+textarea {
+  width: 100%;
+}

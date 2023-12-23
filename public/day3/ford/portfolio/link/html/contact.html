@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>お問い合わせ</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--==============レイアウトを制御する独自のCSSを読み込み===============-->
+    <link rel="stylesheet" type="text/css"
+        href="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/5-17/css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="intern">
+    <div class="wrapper">
+        <header>
+            <div id="wrapper">
+                <canvas id="particle"></canvas>
+                <!--/wrapper-->
+            </div>
+        </header>
+
+        <main>
+            <h2>お問い合わせ</h2>
+            <div class="form">
+                <h3>お問い合わせ内容</h3>
+                <form action="#" method="post">
+                    <select>
+                        <option value="" disabled selected>お問い合わせ内容を選択</option>
+                        <option value="item">商品</option>
+                        <option value="add">広告掲載</option>
+                        <option value="recruit">採用</option>
+                        <option value="intern">インターンシップ</option>
+                        <option value="Fukuoka">その他</option>
+                    </select>
+                    <p>氏名：<br>
+                        <input type="text" name="name" required placeholder="山田　太郎">
+                    </p>
+                    <p>メールアドレス：<br>
+                        <input type="text" name="mail" required placeholder="xxx@xx.jp">
+                    </p>
+                    <!-- <p>件名：<br>
+                        <textarea id="message" name="message" class="title" placeholder="xxについて"></textarea>
+                    </p> -->
+
+                    <p>メッセージ：<br>
+                        <textarea id="message" name="message" class="form-width" placeholder="ご自由にご記入下さい。"></textarea>
+                    </p>
+
+                    <input type="submit" value=" 送信する " class="send">
+
+                </form>
+            </div>
+
+        </main>
+        <nav>
+            <ul class="a-button">
+                <li><a href="../index.html">会社概要</a></li>
+                <li><a href="recruit.html">社員募集</a></li>
+                <li><a href="intern.html">インターン募集</a></li>
+                <li><a href="contact.html">お問い合わせ</a></li>
+            </ul>
+        </nav>
+        <footer> <a href="../../index.html" target="_blank">WHAT'S YOUR OUTFIT TODAY?</a><br><small>&copy; Ford
+                2023</small></footer>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script
+            src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/5-17/js/particleText.js"></script>
+        <!-- <script src="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/5-17/js/5-17.js"></script> -->
+
+        <script src="../js/yuko.js"></script>
+    </div>
+</body>
+
+</html>

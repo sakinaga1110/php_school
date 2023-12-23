@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+          <title>自己紹介ページ</title>
+          <link rel="stylesheet"href="style.css">
+    </head>
+    <body>
+        <h1>WELCOME TO MY PAGE!</h1>
+        <div class="content">
+            <h2>★自己紹介★</h2>
+                <div class="container">
+                    <div class="item"><p>初めまして、古賀郁子です。長崎県佐世保市出身・在住です。<br>食欲が止まらない今日この頃です。<br>右の画像は柴犬ですが、私が好きなスヌーピーはビーグル犬です。</p></div>
+                    <div class="item"><img src="images/dog.png"alt="プロフィール画像"></div>
+                </div>
+        </div>
+        <div class="content">
+            <h2>★おすすめの本★</h2>
+            <p>突然ですが、おすすめの本を紹介します。</p>           
+            <table>
+                <tr>
+                    <th>書籍名</th>
+                    <th>感想</th>
+                    <th>リンク</th>
+                </tr>
+                <tr>
+                    <td>心をととのえるスヌーピー 悩みが消えていく禅の言葉</td>
+                    <td>ピーナッツ（スヌーピー）の漫画と、仏教用語の解説が見開きで併記されています。<br>仏教の解説が難しいので、しんどい時は漫画だけ読んでも癒されます。<br>過去や未来にとらわれず、今を生きる大切さを教わることができます。</td>
+                    <td><a href="https://www.amazon.co.jp/%E5%BF%83%E3%82%92%E3%81%A8%E3%81%A8%E3%81%AE%E3%81%88%E3%82%8B%E3%82%B9%E3%83%8C%E3%83%BC%E3%83%94%E3%83%BC-%E6%82%A9%E3%81%BF%E3%81%8C%E6%B6%88%E3%81%88%E3%81%A6%E3%81%84%E3%81%8F%E7%A6%85%E3%81%AE%E8%A8%80%E8%91%89-%E3%83%81%E3%83%A3%E3%83%BC%E3%83%AB%E3%82%BA%E3%83%BBM%E3%83%BB%E3%82%B7%E3%83%A5%E3%83%AB%E3%83%84/dp/4334952704">Amazon</a></td>
+                </tr>
+            </table>
+        </div>
+        <div class="content">
+            <p></p>
+            <h2>★皆さんのおすすめの本を教えてください★</h2>
+                <form action="exanple.php"method="post"name="contact-form">
+                    <ul>
+                        <li>名前：<input type="text"placeholder="名字　名前"></li>
+                        <li>性別：
+                            <input type="radio"name="gender"value="男性"id="man"checked><label for="man">男性</label>
+                            <input type="radio"name="gender"value="女性"id="woman"><label for="woman">女性</label>
+                            <input type="radio"name="gender"value="その他"id="others"><label for="others">その他</label></li>
+                        <li>メールアドレス：<input type="email"></li>
+                        <li>よく読む本のジャンル（複数回答可）：
+                            <input type="checkbox"name="genre"value="小説"checked>小説
+                            <input type="checkbox"name="genre"value="エッセイ">エッセイ
+                            <input type="checkbox"name="genre"value="漫画">漫画
+                            <input type="checkbox"name="genre"value="雑誌">雑誌
+                            <input type="checkbox"name="genre"value="その他">その他</li>
+                        <li>年代：
+                            <select name="age">
+                                <option value="10代">10代</option>
+                                <option value="20代"selected>20代</option>
+                                <option value="30代">30代</option>
+                                <option value="40代">40代</option>
+                                <option value="50代">50代</option>
+                                <option value="60代">60代</option>
+                                <option value="70代以上">70代以上</option>
+                            </select></li>
+                        <li>おすすめの本のタイトル：<input type="text"placeholder="タイトル"></li>
+                        <li>内容：<br><textarea name="message"placeholder="コメントを入力"></textarea></li>
+                        <li>リンク：<input type="url"></li>
+                    </ul>
+                    <input type="submit"value="送信する"onClick="alert('送信してよろしいですか？');alert('ありがとうございました！')">
+                </form>
+            </div>
+    </body>
+</html>

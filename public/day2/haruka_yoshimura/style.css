@@ -1,0 +1,86 @@
+@charset "UTF-8";
+body{
+  background-color: antiquewhite;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+}
+
+img {
+  border-radius: 20%;
+}
+
+h3 {
+  color: rgb(230, 190, 144);
+  font-family: "游ゴシック体", "Yu Gothic", YuGothic, sans-serif;
+  background-color: rgb(74, 0, 0);
+  margin-top: 0px;
+  padding: 10px;
+}
+
+h2 {
+  margin-left: 10px;
+  color: rgb(74, 0, 0);
+}
+
+p {
+  margin-left: 10px;
+  color: rgb(74, 0, 0);
+  }
+
+div {
+}
+
+.osusume {
+  padding: 1rem;
+  margin-top: 10px;
+  background-color: rgb(74, 0, 0);
+  color: white;
+  border-radius: 10px;
+}
+
+.link {
+  margin: 10px;
+  background-color: rgb(74, 0, 0);
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.line {
+  border-width: 3px;
+  border-style: solid;
+  margin: 10px 20% 0% 20%;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  border-collapse: collapse;
+}
+
+th {
+  font-family: "游ゴシック体", "Yu Gothic", YuGothic, sans-serif;
+}
+
+th,td {
+ border-bottom: 1px black solid;
+ color: rgb(74, 0, 0);
+}
+
+.button {
+  margin: 10px;
+  background-color: rgb(74, 0, 0);
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.from {
+  margin-left: 10px;
+  color: rgb(74, 0, 0);
+}

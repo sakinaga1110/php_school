@@ -1,0 +1,168 @@
+@charset "utf-8";
+
+/* Googleフォント
+font-family: 'Playfair Display', serif;
+*/
+
+.wrapper {
+    width: 90vw;
+    margin: 0 auto;
+    font-family: 'Playfair Display', serif;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+/* ボタン範囲を大きくしたい----------------------------------------------------------------------- */
+.a-button a {
+    display: inline-block;
+    width: 40vw;
+    height: 30px;
+}
+
+/* aについて */
+a {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+}
+
+a::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: #0d2941;
+    transition: all 0.3s ease 0s;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+a:hover::after {
+    width: 100%;
+}
+
+/*------------------------------------------------------------------------ここからheader */
+h1 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+header {
+    padding-top: 160px;
+}
+
+header li {
+    text-align: center;
+}
+
+/* ヘッダー固定したい*/
+
+.menu-1 {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+    width: 90vw;
+    height: 160px;
+
+    /* transform: translateX(-50%) translateY(-50%); */
+}
+
+/* --------------------------------------------------------------------ページ内リンクのずれを調節 */
+:target::before {
+    content: "";
+    display: block;
+    height: 160px;
+    margin-top: -160px;
+}
+
+
+/* ------------------------------------------------------------ここからmain */
+ main p:first-child  {
+    text-align: center;
+    line-height: 1.5em;
+    padding: 5px;
+    margin: 20px;
+    background-color: #d4cfcf;
+} 
+
+h2 {
+    border: 2px solid black;
+    font-size: 30px;
+    width: fit-content;
+    padding: 0 1em;
+    margin-bottom: 20px;
+}
+
+main section {
+    margin-bottom: 80px;
+}
+
+main .shop-grid ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+/* -----------------------------------------------------------------------ここからフッター */
+
+footer {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+footer li {
+    font-size: 13px;
+}
+
+footer section {
+    background-color: #d4cfcf;
+    border: 2px solid black;
+    margin-bottom: 5px;
+}
+
+/* ここからｐｃpage */
+
+@media screen and (min-width:960px) {
+    .wrapper {
+        width: 60vw;
+    }
+
+    .menu-1 {
+        position: fixed;
+        top: 0;
+        z-index: 10000;
+        width: 60vw;
+
+    }
+
+    header ul,
+    footer ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .a-button a {
+        display: inline-block;
+        width: 40%;
+        height: 30px;
+    }
+
+    /* 共通ここまで。ここからメイン */
+    main .shop-grid ul,
+    main ul {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 10px;
+    }
+
+}

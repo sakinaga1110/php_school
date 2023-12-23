@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+ <head>
+    <meta charset="utf-8">
+     <title>oneclickでアラート表示しよう</title>
+ </head>
+ <body>
+ <button onclick="clickEvent()">ボタン</button>
+
+ <script>
+     function clickEvent() {
+
+        //confirm('ログアウトしますか')
+        var res = confirm('ログアウトしますか？');
+
+        console.log(res)
+        if( res == true ){
+            // OKならログアウトメッセージ
+            alert('ログアウトしました')
+        }
+        else {
+             // キャンセルならアラートボックスを表示
+          alert('キャンセルされました')
+        }
+     }
+ </script>
+
+ </body>
+</html>

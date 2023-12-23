@@ -1,0 +1,99 @@
+@charset "UTF-8";
+body {
+    background-color: #97cdf3;
+    background-image: url(sky_00165.jpg);
+    font-family: 'Noto Serif JP', sans-serif;
+}
+
+.box1 {
+    width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+    /*margin: 2em 0;*/
+    background: #dcefff;
+}
+.box1 .box-title {
+    font-size: 1.2em;
+    background: #5fb3f5;
+    padding: 4px;
+    text-align: center;
+    color: #FFF;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+.box1 p {
+    font-family: 'Noto Serif JP', sans-serif;
+    padding: 15px 20px;
+    margin: 0;
+}
+.box1 a {
+    font-family: 'Noto Serif JP', sans-serif;
+    padding: 15px 20px;
+    margin: 0;
+}
+.image {
+    margin: 15px;
+}
+.table {
+    margin: 15px 15px 15px 15px;
+    text-align: left;
+    border-collapse: collapse;
+}
+.th {
+    padding: 10px;
+    border-bottom: solid 5px #748ca5;
+}   
+.td {
+    padding: 10px;
+    border-bottom: solid 1px #748ca5;
+}
+/*.text-center {
+    text-align: center;
+}*/
+/* container */
+.wrapper{
+    width:100%;
+}
+.wrapper .container{
+    max-width:1000px;
+    margin: 10px auto;
+    padding: 80px 0px;
+}
+.container .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper .content-item {
+    width:100%;
+}
+/*@media (min-width: 992px) {
+    .wrapper .content-item {
+        width:50%;
+    }
+}*/
+.wrapper .image{
+    display: flex;
+    align-items: flex-start;
+    max-width:100%;
+    margin:0px auto;
+}
+/*.wrapper .text{
+    padding:50px;
+}*/
+.wrapper .text .heading{
+    margin:0px 0px 40px 0px;
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+}
+.button {
+    margin: 0px 0px 15px 15px;
+}
+
+/*.table {
+    max-width:1000px;
+    height: auto;
+    border-radius: 50%;
+}*/

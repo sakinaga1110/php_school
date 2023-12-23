@@ -1,0 +1,91 @@
+@charset "UTF-8";
+body {
+    background-color:#eefff0;
+}
+h1 {
+    font-family: "游ゴシック体", "Yu Gothic", YuGothic, sans-serfit;
+    border-width: 1px;
+    border-style: solid;
+    text-align: left;
+    font-weight: bold;
+    background-color: #ed18df58;
+    margin-top: 0px;
+}
+h2 {
+    font-weight: bold;
+    color: rgb(0, 103, 221);
+}
+p {
+    font-size: x-large;
+}
+.container {
+    display: flex;
+    justify-content: center;
+}
+.item2 {
+    margin: 20px;
+}
+a {
+    display: flex;
+    text-decoration: none;
+  } 
+.btn a {
+    display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 300px;
+      height: 60px;
+      left: 300px;
+      color: #333;
+      font-size: 18px;
+      font-weight: 700;
+      text-decoration: none;
+    background-color: #65bcca;
+    border-radius: 20px;
+      border: 2px solid #325328;
+  }
+  table{
+    text-align: center;
+    border-collapse: separate;
+    border-spacing: 0;
+  }
+  
+  table th{
+    text-align: center;
+    color:white;
+    background: linear-gradient(#bcb982,#7bba75);
+
+  border-top: 1px solid #3c6690;
+  border-bottom: 1px solid #3c6690;
+  box-shadow: 0px 1px 1px rgba(255,255,255,0.3) inset;
+  width: 25%;
+  padding: 10px 0;
+}
+
+table td{
+  text-align: center;
+  border-bottom: 1px solid #a8b7c5;
+  border-top:none;
+  box-shadow: 0px -3px 5px 1px #eee inset;
+  width: 25%;
+  padding: 10px 0;
+}
+
+.item4 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  
+}
+
+input {
+  width: 300px;
+  height: 50px;
+  border-color: blue; 
+}
+
+textarea {
+  width: 300px;
+  height: 100px;
+  border-color: blue; 
+}

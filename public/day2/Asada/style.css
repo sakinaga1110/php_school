@@ -1,0 +1,55 @@
+@charset "UTF-8";
+.one{
+    border-width: medium;
+    border-style: solid;
+    margin-bottom: 10px;
+}
+.insaide{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.two{
+    border-width: medium;
+    border-style: solid;
+    margin-bottom: 10px;
+}
+.three{
+    border-width: medium;
+    border-style: solid;
+}
+table{
+    margin: auto auto 10px auto;
+    text-align: center;
+}
+th{
+    padding: 3px;
+}
+td{
+    padding: 10px;
+}
+h3{
+    margin-top: 0px;
+    background-color: rgb(255, 193, 152);
+}
+img{
+    border-style: solid;
+    border-color: rgb(255, 197, 233);
+    margin: 0px 10px 10px 0px;
+}
+input[type="text"]{
+    width: 200px;
+}
+textarea{
+    width: 200px;
+    height: 80px;
+}
+label{
+    display: block;
+}
+.four{
+    padding-bottom: 10px;
+}
+form{
+    margin: auto auto auto 10px;
+}
